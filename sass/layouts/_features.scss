@@ -1,11 +1,30 @@
 .features.section {
     padding-bottom: 0;
+    & .lists {
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+        @include tablet {
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+    }   
+    
 }
 
 .features__list {
-    width: calc((100% - 90px) / 4);
+      width: 100%;
     &:not(:last-child) {
-        margin-right: var(--margin30px);
+        @media screen and (max-width: 767px) {
+        margin-bottom: var(--margin30px);
+        }
+    }
+    @include tablet {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+    }
+    @include desktop {
+        width: calc((100% - 120px) / 4);
     }
 }
 
