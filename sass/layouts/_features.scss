@@ -1,0 +1,26 @@
+.features.section {
+    padding-bottom: 0;
+}
+
+.features__list {
+    width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+        margin-right: var(--margin30px);
+    }
+}
+
+.features__container-icon {
+    @include flexCenter();
+    padding: 25px 100px;
+    margin-bottom: var(--margin30px);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-backgroun-color);
+}
+
+.features__titel {
+    @include font(700, null, 1.41, null);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--primary-text-title);
+}
