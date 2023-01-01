@@ -1,9 +1,9 @@
 .features.section {
-    padding-bottom: 0;
+    
+    // padding-bottom: 0;
     & .lists {
-        @media screen and (max-width: 767px) {
-            display: block;
-        }
+        flex-wrap: wrap;
+        
         @include tablet {
             flex-wrap: wrap;
             margin: -15px;

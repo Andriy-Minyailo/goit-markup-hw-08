@@ -682,13 +682,8 @@ li .address__contact {
   border: none;
 }
 
-.features.section {
-  padding-bottom: 0;
-}
-@media screen and (max-width: 767px) {
-  .features.section .lists {
-    display: block;
-  }
+.features.section .lists {
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .features.section .lists {
@@ -735,6 +730,15 @@ li .address__contact {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--primary-text-title);
+}
+
+.work.section {
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .work.section {
+    display: none;
+  }
 }
 
 .work__list {
