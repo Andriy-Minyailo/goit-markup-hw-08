@@ -56,15 +56,16 @@ li .address__contact {
 
 .our-social__titel {
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-backgroun-color);
 }
-
+.our-social__lists {
+    justify-content: center;
+}
 .our-social__list {
     width: 44px;
     height: 44px;
