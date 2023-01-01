@@ -16,14 +16,18 @@
 }
 
 .hero__title {
-    @include font(900, 44, 1.36, 0.06);
-    max-width: 696px;
+    @include font(900, 26, 1.61, 0.06em);
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--margin30px);
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-backgroun-color);
+    @include desktop {
+        @include font(900, 44, 1.36, 0.06em);
+        max-width: 696px;
+    }
 }
 
 .hero__button {

@@ -1,5 +1,8 @@
 .client__company {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include desktop {
+        margin-bottom: 50px;
+    }
 }
 
 .client__title {
@@ -7,12 +10,18 @@
     text-align: center;
     color: var(--primary-text-title);
 }
-
+.company.lists {
+    flex-wrap: wrap;
+    margin: -15px;
+}
 .company__list {
-    width: calc((100% - 150px) / 6);
-    
-    &:not(:last-child) {
-        margin-right: var(--margin30px);
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    @include tablet {
+        width: calc((100% - 90px) / 3);
+    }
+    @include desktop {
+    width: calc((100% - 180px) / 6);
     }
 }
 
