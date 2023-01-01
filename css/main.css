@@ -223,6 +223,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .container__tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .footer__address {
   margin-top: 28px;
 }
@@ -259,9 +266,10 @@ li .address__contact {
   color: var(--accent-color);
 }
 
-.footer__our-social {
-  margin-top: 60px;
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer__our-social {
+    margin-top: 60px;
+  }
 }
 
 .our-social__titel {
@@ -305,18 +313,15 @@ li .address__contact {
   fill: currentColor;
 }
 
-.footer__subscription {
-  margin-left: auto;
-}
-
 .subscription {
-  padding-top: 12px;
+  margin-top: 60px;
 }
 
 .subscription__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   font-style: normal;
   text-transform: uppercase;
   color: var(--primary-backgroun-color);
@@ -324,8 +329,12 @@ li .address__contact {
 }
 
 .subscription__input {
-  width: 358px;
+  display: block;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -361,17 +370,18 @@ li .address__contact {
 }
 
 .subscription__button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--accent-color);

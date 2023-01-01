@@ -9,7 +9,13 @@
 //     flex-wrap: wrap;
 //     @include flexCenter();
 // }
-
+.container__tablet {
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
 .footer__address {
     margin-top: 28px;
 }
@@ -46,8 +52,10 @@ li .address__contact {
 }
 
 .footer__our-social {
+    @media screen and (max-width: 767px) {
     margin-top: 60px;
-    margin-bottom: 60px;
+    }
+    
 }
 
 // .our-social {
@@ -94,16 +102,20 @@ li .address__contact {
     fill: currentColor;
 }
 
-.footer__subscription {
-    margin-left: auto;
-}
+// .footer__subscription {
+//     margin-left: auto;
+// }
 
 .subscription {
-    padding-top: 12px;
+    
+    margin-top: 60px;
+    
+    // padding-top: 12px;
 }
 
 .subscription__text {
     @include font(700, 14, 1.14, null);
+    text-align: center;
     font-style: normal;
     text-transform: uppercase;
     color: var(--primary-backgroun-color);
@@ -111,8 +123,12 @@ li .address__contact {
 }
 
 .subscription__input {
-    width: 358px;
+    display: block;
+    width: 450px;
     height: 50px;
+    margin-bottom: 20px;
+margin-right: auto;
+margin-left: auto;
     padding-left: 16px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -133,12 +149,15 @@ li .address__contact {
 }
 
 .subscription__button {
-    @include flexCenter($df:inline-flex);
+    @include flexCenter();
     @include font(700, 16, 1.88, 0.06em);
+    margin-left: auto;
+    margin-right: auto;
+    // margin-left: 12px;
     font-style: normal;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--accent-color);
