@@ -1,8 +1,31 @@
-.filter {
-    justify-content: center;
+.filter__container {
+    margin-bottom: 40px;
 
+    @include tablet {
+        margin-bottom: 30px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
+
+.filter {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: -15px;
     &>li:not(:last-child) {
         margin-right: 8px;
+    }
+    &>li { 
+        margin-bottom: 15px;
+        @include tablet {
+            margin-bottom: 0px;
+        }
+    }
+    @include tablet {
+    justify-content: center;
+    margin-bottom: 0px;
     }
 }
 
