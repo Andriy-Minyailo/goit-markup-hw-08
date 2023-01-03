@@ -14,8 +14,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) skew(0deg, 0deg);
-    width: 528px;
-    min-height: 581px;
+    width: calc(100% - 30px);
+    min-height: 609px;
     padding: 40px;
     border-radius: 4px;
     background-color: var(--primary-backgroun-color);
@@ -24,6 +24,14 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: top left;
+    @include tel {
+        width: 450px;
+        min-height: 609;
+    }
+    @include desktop {
+        width: 528px;
+        min-height: 581px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -129,12 +137,12 @@
 }
 
 .modal__pilitico-label {
-    @include font(400, 14, 1.71, null);
+    @include font(400, 12, 1.17, null);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
     color: var(--primary-text-color);
+    @include desktop {
+    @include font(400, 14, 1.71, null);
+    }
 }
 
 .modal__input-check--yes {
@@ -198,8 +206,3 @@
     background-color: var(--accent-color);
 }
 
-// .is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
