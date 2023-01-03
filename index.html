@@ -179,6 +179,7 @@
             <li class="work__list">
               <div class="work__container">
                 <img
+                  srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
                   src="./images/box1.jpg"
                   alt="людина пише код на компютері"
                   width="370"
@@ -189,6 +190,7 @@
             <li class="work__list">
               <div class="work__container">
                 <img
+                  srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
                   src="./images/box2.jpg"
                   alt="людина працює з мобільним додаток та компютером"
                   width="370"
@@ -199,6 +201,7 @@
             <li class="work__list">
               <div class="work__container">
                 <img
+                  srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
                   src="./images/box3.jpg"
                   alt="людина обирає колір з палітри на планшеті"
                   width="370"
@@ -214,11 +217,38 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="card lists">
             <li class="card__list">
-              <img
-                src="./images/img1.jpg"
-                alt="фото Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des1.jpg    1x,
+                    ./images/team_des1-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab1.jpg    1x,
+                    ./images/team_tab1-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob1.jpg    1x,
+                    ./images/team_mob1-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/team_des1.jpg    1x,
+                    ./images/team_des1-2x.jpg 2x
+                  "
+                  src="./images/team_des1.jpg"
+                  alt="фото Ігор Дем'яненко"
+                  width="270"
+                />
+              </picture>
               <h3 class="card__name">Ігор Дем'яненко</h3>
               <p lang="en" class="card__job">Product Designer</p>
               <ul class="list-social team__list-social lists">
@@ -253,11 +283,39 @@
               </ul>
             </li>
             <li class="card__list">
-              <img
-                src="./images/img2.jpg"
-                alt="фото Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des2.jpg    1x,
+                    ./images/team_des2-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab2.jpg    1x,
+                    ./images/team_tab2-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob2.jpg    1x,
+                    ./images/team_mob2-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/team_des2.jpg    1x,
+                    ./images/team_des2-2x.jpg 2x
+                  "
+                  src="./images//team_des2.jpg"
+                  alt="фото Ольга Рєпіна"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="card__name">Ольга Рєпіна</h3>
               <p lang="en" class="card__job">Frontend Developer</p>
               <ul class="list-social team__list-social lists">
@@ -292,11 +350,39 @@
               </ul>
             </li>
             <li class="card__list">
-              <img
-                src="./images/img3.jpg"
-                alt="фото Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des3.jpg    1x,
+                    ./images/team_des3-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab3.jpg    1x,
+                    ./images/team_tab3-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob3.jpg    1x,
+                    ./images/team_mob3-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/team_des3.jpg    1x,
+                    ./images/team_des3-2x.jpg 2x
+                  "
+                  src="./images/team_des3.jpg"
+                  alt="фото Микола Тарасов"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="card__name">Микола Тарасов</h3>
               <p lang="en" class="card__job">Marketing</p>
               <ul class="list-social team__list-social lists">
@@ -331,11 +417,39 @@
               </ul>
             </li>
             <li class="card__list">
-              <img
-                src="./images/img4.jpg"
-                alt="фото Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des4.jpg    1x,
+                    ./images/team_des4-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab4.jpg    1x,
+                    ./images/team_tab4-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob4.jpg    1x,
+                    ./images/team_mob4-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="
+                    ./images/team_des4.jpg    1x,
+                    ./images/team_des4-2x.jpg 2x
+                  "
+                  src="./images/team_des4.jpg"
+                  alt="фото Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
+
               <h3 class="card__name">Михайло Єрмаков</h3>
               <p lang="en" class="card__job">UI Designer</p>
               <ul class="list-social team__list-social lists">
