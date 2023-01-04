@@ -1,11 +1,11 @@
-
-
 .projects {
     display: block;
+    
     @include tablet {
         display: flex;
         flex-wrap: wrap;
-    }
+        margin: -15px;
+     }
 }
 
 .projects__list {
@@ -17,34 +17,22 @@
         margin-bottom: var(--margin30px);
         }
     }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 30px) / 2);
-    &:not(:nth-child(2n)) {
-            margin-right: var(--margin30px);
+        @include tablet {
+            margin: 15px;
+            width: calc((100% - 60px) / 2);
         }
-    &:not(:nth-last-child(-n + 1)) {
-            margin-bottom: var(--margin30px);
-        }
-    }
 
     @include desktop {
-    width: calc((100% - 60px) / 3);
-    &:not(:nth-child(3n)) {
-        margin-right: var(--margin30px);
-    }
-    &:not(:nth-last-child(-n + 3)) {
-         margin-bottom: var(--margin30px);
-        }
+    width: calc((100% - 90px) / 3);
     }
 }
 
 .projects__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid #eeeeee;
     
     &:hover,
     &:focus {
@@ -78,10 +66,11 @@
 }
 
 .projects__name {
+    flex-grow: 1;
     padding: 20px 24px;
-    // border-bottom: 1px solid #eeeeee;
-    // border-left: 1px solid #eeeeee;
-    // border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
 }
 
 .projects__titel {

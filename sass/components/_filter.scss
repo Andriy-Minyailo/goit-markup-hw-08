@@ -1,16 +1,5 @@
-.filter__container {
-    margin-bottom: 40px;
-
-    @include tablet {
-        margin-bottom: 30px;
-    }
-
-    @include desktop {
-        margin-bottom: 50px;
-    }
-}
-
 .filter {
+    padding-bottom: 40px;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: -15px;
@@ -26,6 +15,10 @@
     @include tablet {
     justify-content: center;
     margin-bottom: 0px;
+    padding-bottom: 30px;
+    }
+    @include desktop {
+    padding-bottom: 50px;
     }
 }
 

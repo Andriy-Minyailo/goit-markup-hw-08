@@ -117,33 +117,59 @@
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <div class="filter__container">
-            <ul class="filter lists">
-              <li><button type="button" class="filter__button">Усі</button></li>
-              <li>
-                <button type="button" class="filter__button">Веб-сайти</button>
-              </li>
-              <li>
-                <button type="button" class="filter__button">Додатки</button>
-              </li>
-              <li>
-                <button type="button" class="filter__button">Дизайн</button>
-              </li>
-              <li>
-                <button type="button" class="filter__button">Маркетинг</button>
-              </li>
-            </ul>
-          </div>
+          <ul class="filter lists">
+            <li><button type="button" class="filter__button">Усі</button></li>
+            <li>
+              <button type="button" class="filter__button">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button">Додатки</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
           <ul class="projects lists">
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/tehnocryak.jpg"
-                    alt="відкритий ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_1.jpg    1x,
+                        ./images/project_des_1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_1.jpg    1x,
+                        ./images/project_tab_1-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_1.jpg    1x,
+                        ./images/project_mob_1-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_1.jpg    1x,
+                        ./images/project_des_1-2x.jpg 2x
+                      "
+                      src="./images/project_des_1.jpg"
+                      alt="відкритий ноутбук"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -159,12 +185,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/poster_new_orlean.jpg"
-                    alt="гравці з баскетболу"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_2.jpg    1x,
+                        ./images/project_des_2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_2.jpg    1x,
+                        ./images/project_tab_2-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_2.jpg    1x,
+                        ./images/project_mob_2-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_2.jpg    1x,
+                        ./images/project_des_2-2x.jpg 2x
+                      "
+                      src="./images/project_des_2.jpg"
+                      alt="гравці з баскетболу"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -182,12 +236,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/restaurant_seafood.jpg"
-                    alt="емблема ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_3.jpg    1x,
+                        ./images/project_des_3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_3.jpg    1x,
+                        ./images/project_tab_3-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_3.jpg    1x,
+                        ./images/project_mob_3-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_3.jpg    1x,
+                        ./images/project_des_3-2x.jpg 2x
+                      "
+                      src="./images/project_des_3.jpg"
+                      alt="емблема ресторану"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -205,12 +287,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/project_prime.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_4.jpg    1x,
+                        ./images/project_des_4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_4.jpg    1x,
+                        ./images/project_tab_4-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_4.jpg    1x,
+                        ./images/project_mob_4-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_4.jpg    1x,
+                        ./images/project_des_4-2x.jpg 2x
+                      "
+                      src="./images/project_des_4.jpg"
+                      alt="навушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -228,12 +338,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/project_boxes.jpg"
-                    alt="дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_5-2x.jpg 1x,
+                        ./images/project_des_5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_5.jpg    1x,
+                        ./images/project_tab_5-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_5.jpg    1x,
+                        ./images/project_mob_5-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_5.jpg    1x,
+                        ./images/project_des_5-2x.jpg 2x
+                      "
+                      src="./images/project_des_5.jpg"
+                      alt="дві коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -251,12 +389,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/Inspiration_has_no_borders.jpg"
-                    alt="монітор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_6-2x.jpg 1x,
+                        ./images/project_des_6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_6.jpg    1x,
+                        ./images/project_tab_6-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_6.jpg    1x,
+                        ./images/project_mob_6-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_6.jpg    1x,
+                        ./images/project_des_6-2x.jpg 2x
+                      "
+                      src="./images/project_des_6.jpg"
+                      alt="монітор"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -274,12 +440,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/limited_edition.jpg"
-                    alt="відкрита книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_7-2x.jpg 1x,
+                        ./images/project_des_7-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_7.jpg    1x,
+                        ./images/project_tab_7-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_7.jpg    1x,
+                        ./images/project_mob_7-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_7.jpg    1x,
+                        ./images/project_des_7-2x.jpg 2x
+                      "
+                      src="./images/project_des_7.jpg"
+                      alt="відкрита книга"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -297,12 +491,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/project_lab.jpg"
-                    alt="бірка з написом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_8-2x.jpg 1x,
+                        ./images/project_des_8-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_8.jpg    1x,
+                        ./images/project_tab_8-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_8.jpg    1x,
+                        ./images/project_mob_8-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_8.jpg    1x,
+                        ./images/project_des_8-2x.jpg 2x
+                      "
+                      src="./images/project_des_8.jpg"
+                      alt="бірка з написом"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -320,12 +542,40 @@
             <li class="projects__list">
               <a href="" class="projects__link">
                 <div class="projects__container">
-                  <img
-                    src="./images/growing_business.jpg"
-                    alt="людина працює за ноутбуком"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_des_9-2x.jpg 1x,
+                        ./images/project_des_9-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_tab_9.jpg    1x,
+                        ./images/project_tab_9-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_mob_9.jpg    1x,
+                        ./images/project_mob_9-2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project_des_9.jpg    1x,
+                        ./images/project_des_9-2x.jpg 2x
+                      "
+                      src="./images/project_des_9.jpg"
+                      alt="людина працює за ноутбуком"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="projects__text-hover">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
