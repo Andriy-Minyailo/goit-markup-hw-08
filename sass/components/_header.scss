@@ -72,13 +72,13 @@ a.current {
 }
 
 .nav__link.current::after {
-    display: block;
     content: "";
-    width: 100%;
-    height: 4px;
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
+    height: 4px;
     border-radius: 4px;
     transform: scale(100%);
     background-color: var(--accent-color);
@@ -180,9 +180,9 @@ fill: currentColor;
 .menu-close {
     @include flexCenter;
     position:absolute;
-    top: 0px;
-    right: 0px;
-    padding: 10px 15px;
+    top: 10px;
+    right: 15px;
+    padding: 0px;
     border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
@@ -243,10 +243,11 @@ fill: currentColor;
                 display: block;
                 content: "";
                 position: absolute;
+                top: 0px;
                 right: -10px;
                 height: 22px;
-                top: 0px;
-                border: 1px solid rgba(33, 33, 33, 0.2);
+                width: 2px;
+                background-color: rgba(33, 33, 33, 0.2);
             }
 }
 .mob-social__link {
