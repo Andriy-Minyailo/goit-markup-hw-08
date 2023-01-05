@@ -38,5 +38,9 @@
     @include font(700, null, 1.41, null);
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
     color: var(--primary-text-title);
+    @include tablet {
+    text-align: left;
+    }
 }

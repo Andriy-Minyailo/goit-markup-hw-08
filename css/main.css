@@ -1088,7 +1088,13 @@ li .address__contact {
   line-height: 1.41;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-text-title);
+}
+@media screen and (min-width: 768px) {
+  .features__titel {
+    text-align: left;
+  }
 }
 
 .work.section {
